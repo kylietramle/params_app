@@ -19,10 +19,5 @@ class NamesController < ApplicationController
       @bingo_message = "Bingo! Your guess is correct!"
     end
   end
-
-  def button_count
-    @count = 0
-
-  end
     
 end

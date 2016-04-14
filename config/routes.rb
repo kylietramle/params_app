@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'names#index'
-  get '/number_game' => 'names#number_game'
+  get '/number_game/:guess' => 'names#number_game'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
