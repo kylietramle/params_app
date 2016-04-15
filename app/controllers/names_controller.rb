@@ -20,4 +20,15 @@ class NamesController < ApplicationController
     end
   end
     
+  def counter
+    old_number = params[:number].to_i
+    @number = old_number + 1
+  end
+
+  def form_display
+  end
+
+  def form_result
+    @message = params[:message]
+  end
 end

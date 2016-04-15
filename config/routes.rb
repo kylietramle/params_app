@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root 'names#index'
   get '/number_game/:guess' => 'names#number_game'
+  get '/counter/:number' => 'names#counter'
+  get '/form_display' => 'names#form_display'
+  post'/form_result' => 'names#form_result'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
